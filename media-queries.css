@@ -1,3 +1,16 @@
+/* screenwidth more than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) {
+
+     /* Resume Section
+  ------------------------------------------------------------------- */
+  
+  #resume .barreslangues {padding-right: 70px;}
+  #resume .hardskills {padding-left: 5px}
+  #resume .softskills {padding-left: 15px}
+  #resume .interests {padding-left: 5px}
+
+}
 
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
