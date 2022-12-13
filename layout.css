@@ -1,0 +1,358 @@
+/* =====================================================================
+
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. Resume Section
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+body { background: #fff }
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+    position: relative;
+    height: 500px;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(leaves.png) no-repeat top center;
+    background-size: cover !important;
+     -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+ }
+ 
+ /* vertically center banner section */
+ header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+ }
+ header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ 
+ header .banner-text { width: 100%; }
+ header .banner-text h1 {
+    font: 90px/1.1em 'opensans-bold', sans-serif;
+    color: #cdc285;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+ }
+ 
+ /* header social links */
+ header .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+ }
+ header .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+ }
+ header .social li a { color: rgba(187, 142, 108, 0.818);}
+ header .social li a:hover { color: rgba(202, 222, 207, 0.916); }
+
+ /* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333;
+}
+.opaque { background-color: rgb#333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: rgb(251, 249, 249);
+
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+
+ul#nav li a:hover {color:rgba(187, 142, 108, 0.818)}
+ 
+/* ------------------------------------------------------------------ */
+/* c. Resume Section
+/* ------------------------------------------------------------------ */
+
+#resume {
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+ }
+ 
+ #resume h1 {
+    font: 24px/32px 'opensans-bold', sans-serif;
+    color: #5d6d37;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+ }
+ #resume h1 span {
+    border-bottom: 3px solid #5d6d3778;
+    padding-bottom: 6px;
+ }
+ #resume h3 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    color: #18480e;
+    margin-bottom: 0px;
+    text-align: left;
+ }
+ 
+ #resume .header-col { padding-top: 9px;
+padding-left: 70px; }
+ #resume .main-col { padding-right: 10%;
+padding-left: 70px; 
+margin-bottom: 48px;
+padding-bottom: 24px;
+border-bottom: 1px solid #E8E8E8
+}
+
+ #resume .info {
+    font: 16px/24px 'opensans-regular', sans-serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 0px;
+ }
+ #resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ #resume .date {
+    font: 15px/24px 'opensans-regular', sans-serif;
+    color:rgb(0, 0, 0)
+ }
+
+#resume p {font: 16px/24px 'opensans-regular', sans-serif;
+    color: #000000;
+   text-align: left, justify;
+}
+
+#resume .barreslangues {
+   padding-left: 70px; 
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8
+}
+
+
+ /*----------------------------------------------*/
+ /*	Skill & Languages Bars
+ /*----------------------------------------------*/
+ 
+ .bars {
+     width: 95%;
+     float: left;
+     padding: 0;
+     text-align: left;
+     margin-bottom: 0px;
+ }
+ .bars .skills {
+       margin-top: 36px;
+    list-style: none;
+ }
+ .bars li {
+    position: relative;
+       margin-bottom: 60px;
+       background: #ccc;
+       height: 42px;
+       border-radius: 3px;
+       list-style: none;
+ }
+ .bars li em {
+     font: 15px 'opensans-bold', sans-serif;
+    color: #313131;
+     text-transform: uppercase;
+    letter-spacing: 2px;
+     font-weight: normal;
+    position: relative;
+     top: -36px;
+ }
+ .bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+       background: #313131;
+    display: inline-block;
+       height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+ }
+ 
+ .francais {
+   width: 98.5%;
+   -moz-animation: francais 2s ease;
+   -webkit-animation: francais 2s ease;
+}
+.neerlandais {
+   width: 98.5%;
+   -moz-animation: neerlandais  2s ease;
+   -webkit-animation: neerlandais  2s ease;
+}
+.anglais {
+   width: 90%;
+   -moz-animation: anglais 2s ease;
+   -webkit-animation: anglais 2s ease;
+}
+
+@-moz-keyframes francais {
+   0%   { width: 0px;  }
+   100% { width: 98.5%;  }
+ }
+ @-moz-keyframes neerlandais  {
+   0%   { width: 0px;  }
+   100% { width: 98.5%;  }
+ }
+ @-moz-keyframes anglais {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+
+ @-webkit-keyframes francais {
+   0%   { width: 0px;  }
+   100% { width: 98.5%;  }
+ }
+ @-webkit-keyframes neerlandais  {
+   0%   { width: 0px;  }
+   100% { width: 98.5%;  }
+ }
+ @-webkit-keyframes anglais  {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+
+ .html5 {
+   width: 40%;
+   -moz-animation: html5 2s ease;
+   -webkit-animation: html5 2s ease;
+}
+.css {
+   width: 20%;
+   -moz-animation: css 2s ease;
+   -webkit-animation: css 2s ease;
+}
+ .photoshop {
+       width: 60%;
+       -moz-animation: photoshop 2s ease;
+       -webkit-animation: photoshop 2s ease;
+ }
+ .lightroom{
+       width: 75%;
+       -moz-animation: lightroom 2s ease;
+       -webkit-animation: lightroom 2s ease;
+ }
+
+ @-moz-keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+ @-moz-keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 20%;  }
+ }
+ @-moz-keyframes photoshop {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @-moz-keyframes lightroom {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+
+ @-webkit-keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+ @-webkit-keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 20%;  }
+ }
+ @-webkit-keyframes photoshop {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @-webkit-keyframes lightroom {
+   0%   { width: 0px;  }
+   100% { width: 75%;  }
+ }
+
+.softskills { font: 15px 'opensans-bold', sans-serif;
+   color: #313131;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: normal;
+   list-style-type: circle;
+}
+
+.interests { font: 15px 'opensans-bold', sans-serif;
+   color: #313131;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: normal;
+   list-style-type: circle;
+}
